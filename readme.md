@@ -2,6 +2,10 @@
 
 This is a simple Tic Tac Toe game built using React. It allows two players to play against each other on a 3x3 grid.
 
+## Play the Game
+
+You can play the game [here](https://dolevtabibi.github.io/React-TIC-TAC-TOE/).
+
 ## Features
 
 - Two players can play against each other.
@@ -18,7 +22,6 @@ This is a simple Tic Tac Toe game built using React. It allows two players to pl
 - CSS3
 
 ## How to Play
-
 1. Clone the repository to your local machine using `git clone`.
 2. Navigate into the project directory.
 3. Install dependencies using `npm install`.
