@@ -59,10 +59,11 @@ function App() {
   const [players, setPlayers] = useState(PLAYERS);
   const [gameTurns, setGameTurns] = useState([]);
 
-  const activePlayer = deriveActivePlayer(gameTurns);
   const gameBoard = deriveGameBoard(gameTurns);
   const winner = deriveGameWinner(gameBoard, players);
   const hasDraw = gameTurns.length === 9 && !winner;
+  const activePlayer = (!winner && !hasDraw) && deriveActivePlayer(gameTurns);
+
 
   function handleSelectSquare(rowIndex, colIndex) {
     if (!winner && !hasDraw) {
